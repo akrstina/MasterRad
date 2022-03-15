@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SenzorMaster.ConnectionPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#2b2d42">
+            <Label TextColor="#8d99ae" Text="Konekcija na server"  
+           FontSize="Large"    
+           HorizontalOptions="Center" />
+            <Entry x:Name="IPadresa" Placeholder="IP Address" Text="192.168.1.177" TextColor="#edf2f4" BackgroundColor="#8D99AE"/>
+            <Entry x:Name="Port" Placeholder="Port Number" Text="80" TextColor="#edf2f4"
+                   BackgroundColor="#8D99AE"/>
+            <Button x:Name="Connect" Text="Konektuj se" BackgroundColor="#8d99ae" TextColor="#2b2d42" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Connect_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
